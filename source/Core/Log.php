@@ -110,7 +110,7 @@ class Log {
      * @return $this
      * @throws \Exception
      */
-    public function In(string $field, array $typos){
+    public function in(string $field, array $typos){
         if(empty($typos)){
             throw new \Exception("Campo tipos está em branco");
             exit;
@@ -299,7 +299,12 @@ class Log {
      */
     public function json()
     {
-        return json_encode($this->data);
+        $result = $this->filter;
+        $this->filter = [];
+        if(empty($result)){
+            return json_encode($this->data);
+        }
+        return json_encode($result);
     }
 
 
