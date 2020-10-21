@@ -1,0 +1,27 @@
+{
+  "name": "carvalho/bb_log",
+  "description": "Gerenciamento de LOG em arquivos",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Carlos Mateus Carvalho",
+      "email": "carvalho.ti.adm@gmail.com",
+      "homepage": "https://carvalhosjs.github.io/",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Support/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.1"
+  }
+}
