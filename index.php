@@ -10,7 +10,7 @@
 
     //gravar um json novo
     $log1 = new LogJson($path);
-    $log1->load("testfile8.json");
+    $log1->load("testfile1.json");
     $log1->type = "Employee";
     $log1->message = "É um teste de funcionario para o arquivo JSON";
     $log1->date = date("Y-m-d H:i:s");
